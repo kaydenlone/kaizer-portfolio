@@ -404,15 +404,14 @@ header {
 
 .navbar a {
     text-decoration: none;
-    color: #333;
+    color: #333;           /* dark color for visibility */
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-    color: #0070f3; /* primary accent color */
+    color: #0070f3;        /* primary accent color on hover */
 }
-
 /* Download CV Button */
 .download-btn {
     padding: 8px 16px;
@@ -433,3 +432,4 @@ header {
 html {
     scroll-behavior: smooth;
 }
+
