@@ -657,3 +657,83 @@ footer {
 html {
     scroll-behavior: smooth;
 }
+
+/* Modern Hero Section */
+.modern-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0070f3 0%, #00bfa6 100%);
+    color: #fff;
+    border-radius: 10px;
+}
+
+/* Hero Text Styling */
+.modern-hero h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.modern-hero p {
+    font-size: 18px;
+    color: #f0f0f0;
+    margin-bottom: 25px;
+}
+
+/* Hero Button Styling */
+.modern-hero .btn {
+    padding: 12px 25px;
+    background-color: #fff;
+    color: #0070f3;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.modern-hero .btn:hover {
+    background-color: #005bb5;
+    color: #fff;
+}
+
+/* Hero Image */
+.modern-hero .hero-image img {
+    max-width: 250px;
+    border-radius: 15px;
+    border: 3px solid rgba(255,255,255,0.5);
+    transition: transform 0.3s ease;
+}
+
+.modern-hero .hero-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Floating Geometric Shapes */
+.modern-hero::before,
+.modern-hero::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.15;
+}
+
+.modern-hero::before {
+    width: 200px;
+    height: 200px;
+    background: #fff;
+    top: -50px;
+    left: -50px;
+}
+
+.modern-hero::after {
+    width: 300px;
+    height: 300px;
+    background: #00bfa6;
+    bottom: -100px;
+    right: -100px;
+}
