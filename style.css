@@ -308,3 +308,77 @@ footer {
 .timeline-content ul li {
     margin-bottom: 6px;
 }
+
+/* Experience Slider */
+.experience-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.slide.active {
+    display: flex;
+}
+
+.timeline-logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 2px solid #0070f3;
+}
+
+.timeline-content {
+    background: #f9f9f9;
+    padding: 15px 20px;
+    border-radius: 8px;
+    flex: 1;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #0070f3;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 20px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    opacity: 1;
+}
+
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+
+.timeline-content h3 {
+    margin: 0 0 5px;
+    color: #0070f3;
+}
+
+.timeline-content h4 {
+    margin: 0 0 10px;
+    font-weight: normal;
+    color: #555;
+}
+
+.timeline-content ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.timeline-content ul li {
+    margin-bottom: 6px;
+}
