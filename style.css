@@ -433,3 +433,10 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Header Title */
+header h1 {
+    color: #333;          /* dark color to contrast white background */
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
