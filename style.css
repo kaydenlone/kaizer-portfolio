@@ -737,3 +737,18 @@ html {
     bottom: -100px;
     right: -100px;
 }
+
+/* Floating shapes animation */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(15px); }
+    100% { transform: translateY(0px); }
+}
+
+.modern-hero::before {
+    animation: float 6s ease-in-out infinite;
+}
+
+.modern-hero::after {
+    animation: float 8s ease-in-out infinite;
+}
