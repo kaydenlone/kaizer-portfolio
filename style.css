@@ -382,3 +382,50 @@ footer {
 .timeline-content ul li {
     margin-bottom: 6px;
 }
+
+/* Sticky Header */
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #0070f3; /* primary accent color */
+}
+
+/* Download CV Button */
+.download-btn {
+    padding: 8px 16px;
+    border: 2px solid #0070f3;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #0070f3;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #0070f3;
+    color: #fff;
+    border-color: #0070f3;
+}
