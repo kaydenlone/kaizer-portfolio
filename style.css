@@ -429,3 +429,7 @@ header {
     color: #fff;
     border-color: #0070f3;
 }
+
+html {
+    scroll-behavior: smooth;
+}
