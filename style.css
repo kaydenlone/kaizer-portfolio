@@ -254,3 +254,57 @@ footer {
 .timeline-content ul li {
     margin-bottom: 6px;
 }
+
+/* Timeline with logos */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.timeline-logo img {
+    width: 60px;            /* size of the logo */
+    height: 60px;
+    object-fit: contain;
+    border-radius: 50%;     /* circular logo */
+    border: 2px solid #0070f3;
+}
+
+.timeline-content {
+    background: #f9f9f9;
+    padding: 15px 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.timeline-content h3 {
+    margin: 0 0 5px;
+    color: #0070f3;
+}
+
+.timeline-content h4 {
+    margin: 0 0 10px;
+    font-weight: normal;
+    color: #555;
+}
+
+.timeline-content ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.timeline-content ul li {
+    margin-bottom: 6px;
+}
