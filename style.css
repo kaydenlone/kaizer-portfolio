@@ -1618,3 +1618,43 @@ footer {
 #contact .contact-card a:hover {
     text-decoration: underline;
 }
+
+/* Compact Contact Section */
+#contact {
+    padding: 40px 20px; /* reduce vertical padding */
+    background-color: #004080; /* lighter professional blue */
+    color: #ffffff; /* text color */
+}
+
+#contact h2 {
+    margin-bottom: 20px; /* less space below the heading */
+    font-size: 28px;
+}
+
+.contact-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* space between cards */
+    justify-content: flex-start;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* smaller space between icon and text */
+    padding: 10px 0; /* less vertical padding */
+}
+
+.contact-card p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.contact-card a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
