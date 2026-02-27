@@ -909,3 +909,32 @@ h2 {
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 30px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links a {
+    color: #ccc;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+p {
+    line-height: 1.6;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
