@@ -903,7 +903,7 @@ html {
 
 .logo {
   text-decoration: none;   /* removes underline */
-  color: white;
+  color: black;
   font-weight: bold;
   transition: 0.3s ease;
 }
@@ -911,3 +911,4 @@ html {
 .logo:hover {
   color: #2563eb;          /* change color on hover */
 }
+
