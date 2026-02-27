@@ -900,3 +900,14 @@ html {
 .logo:hover {
   color: #2563eb;
 }
+
+.logo {
+  text-decoration: none;   /* removes underline */
+  color: white;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.logo:hover {
+  color: #2563eb;          /* change color on hover */
+}
