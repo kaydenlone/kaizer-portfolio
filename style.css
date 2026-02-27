@@ -1571,3 +1571,50 @@ footer {
 .contact-card a:hover {
     text-decoration: underline;
 }
+
+/* Contact Section Override */
+#contact {
+    background-color: #005b99 !important; /* lighter blue */
+    color: #ffffff !important;
+    padding: 60px 0;
+}
+
+#contact h2 {
+    color: #ffffff !important;
+}
+
+#contact .contact-card {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px 25px;
+    border-radius: 12px;
+    margin: 10px;
+    min-width: 250px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+#contact .contact-card:hover {
+    transform: translateY(-5px);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#contact .contact-icon {
+    font-size: 2rem;
+    margin-right: 15px;
+}
+
+#contact .contact-card p,
+#contact .contact-card a {
+    margin: 0;
+    color: #ffffff !important;
+    font-size: 1.1rem;
+}
+
+#contact .contact-card a {
+    text-decoration: none;
+}
+
+#contact .contact-card a:hover {
+    text-decoration: underline;
+}
