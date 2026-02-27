@@ -1188,3 +1188,28 @@ footer {
     margin: 0 0 10px 0;
   }
 }
+
+.project-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+}
+.project-link {
+  text-decoration: none;
+  color: #1f2937; /* dark text */
+  font-weight: 600;
+}
+.project-link:hover {
+  color: #3b82f6; /* blue hover */
+}
+.project-publication {
+  font-size: 0.9rem;
+  color: #6b7280; /* gray text */
+  margin-top: 8px;
+}
