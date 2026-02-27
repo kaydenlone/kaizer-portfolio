@@ -1662,3 +1662,7 @@ footer {
 .section {
     padding: 100px 20px;
 }
+
+#contact {
+    padding: 50px 20px;   /* smaller than other sections */
+}
