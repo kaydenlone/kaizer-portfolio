@@ -935,3 +935,34 @@ footer {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); } /* adjust depending on total width */
 }
+
+#tools {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 2rem;
+  animation: scroll 20s linear infinite;
+}
+
+.carousel-item img {
+  height: 60px; /* adjust size */
+  object-fit: contain;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Optional: Pause on hover */
+.carousel:hover {
+  animation-play-state: paused;
+}
