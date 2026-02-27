@@ -966,3 +966,60 @@ footer {
 .carousel:hover {
   animation-play-state: paused;
 }
+
+/* Section Setup */
+#tools {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.partners-slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* Slide Panel */
+.slide {
+  display: none;
+  justify-content: center;
+  gap: 2rem;
+  transition: 0.6s ease;
+}
+
+.slide.active {
+  display: flex;
+}
+
+/* Logo Images */
+.slide img {
+  height: 60px;
+  object-fit: contain;
+  opacity: 0.8;
+  transition: 0.3s ease;
+}
+
+.slide img:hover {
+  opacity: 1;
+}
+
+/* Dots */
+.slider-dots {
+  margin-top: 1rem;
+}
+
+.slider-dots .dot {
+  height: 10px;
+  width: 10px;
+  margin: 6px;
+  background: #888;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.slider-dots .dot.active {
+  background: #111;
+}
