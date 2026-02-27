@@ -244,13 +244,12 @@ setInterval(() => {
 }, slideInterval);
 </script>
 
-<script>
 // EXPERIENCE SLIDER (modern style)
 const expSlides = document.querySelectorAll('.exp-slide');
-const prevBtn = document.querySelector('.experience-slider .prev-btn');
-const nextBtn = document.querySelector('.experience-slider .next-btn');
-const dotsContainer = document.querySelector('.exp-dots');
-let currentExp = 0;
+const expPrevBtn = document.querySelector('.experience-slider .prev-btn');
+const expNextBtn = document.querySelector('.experience-slider .next-btn');
+const expDotsContainer = document.querySelector('.exp-dots');
+let expCurrent = 0;
 
 // Create dots
 expSlides.forEach((_, index) => {
@@ -258,63 +257,36 @@ expSlides.forEach((_, index) => {
   dot.classList.add('dot');
   if (index === 0) dot.classList.add('active');
   dot.addEventListener('click', () => showExpSlide(index));
-  dotsContainer.appendChild(dot);
+  expDotsContainer.appendChild(dot);
 });
 
 // Show slide function
 function showExpSlide(index) {
   expSlides.forEach((slide, i) => slide.classList.toggle('active', i === index));
-  Array.from(dotsContainer.children).forEach((dot, i) => dot.classList.toggle('active', i === index));
-  currentExp = index;
+  Array.from(expDotsContainer.children).forEach((dot, i) => dot.classList.toggle('active', i === index));
+  expCurrent = index;
 }
 
 // Arrows
-nextBtn.addEventListener('click', () => {
-  let next = (currentExp + 1) % expSlides.length;
+expNextBtn.addEventListener('click', () => {
+  let next = (expCurrent + 1) % expSlides.length;
   showExpSlide(next);
 });
 
-prevBtn.addEventListener('click', () => {
-  let prev = (currentExp - 1 + expSlides.length) % expSlides.length;
+expPrevBtn.addEventListener('click', () => {
+  let prev = (expCurrent - 1 + expSlides.length) % expSlides.length;
   showExpSlide(prev);
 });
 
 // Auto slide every 8s
 setInterval(() => {
-  let next = (currentExp + 1) % expSlides.length;
+  let next = (expCurrent + 1) % expSlides.length;
   showExpSlide(next);
 }, 8000);
 
 // Show first slide
-showExpSlide(currentExp);
-</script>
+showExpSlide(expCurrent);
     
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
