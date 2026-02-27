@@ -889,3 +889,14 @@ html {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
+.logo {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.logo:hover {
+  color: #2563eb;
+}
