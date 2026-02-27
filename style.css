@@ -847,3 +847,13 @@ html {
 .footer-social a:hover {
     color: #0070f3;
 }
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
