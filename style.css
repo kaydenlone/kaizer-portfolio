@@ -1666,3 +1666,20 @@ footer {
 #contact {
     padding: 50px 20px;   /* smaller than other sections */
 }
+
+.contact-container {
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.contact-info div {
+    font-size: 15px;
+    color: #555;
+}
