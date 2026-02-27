@@ -1329,3 +1329,58 @@ footer {
 .contact-card a:hover {
   text-decoration: underline;
 }
+
+/* Contact Section */
+#contact {
+  background-color: #222; /* lighter dark gray */
+  color: #fff; /* white text */
+  padding: 60px 0;
+  text-align: center;
+}
+
+#contact h2 {
+  margin-bottom: 40px;
+  font-size: 2.2rem;
+}
+
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  background-color: #333; /* slightly lighter than section */
+  padding: 30px 25px;
+  border-radius: 12px;
+  min-width: 200px;
+  max-width: 250px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  background-color: #444; /* hover effect slightly lighter */
+}
+
+.contact-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.contact-card p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.contact-card a {
+  color: #fff; /* make links white */
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  color: #4fc3f7; /* optional hover color */
+  text-decoration: underline;
+}
