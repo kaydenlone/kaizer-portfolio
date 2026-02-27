@@ -820,3 +820,30 @@ html {
     padding-top: 15px;
     color: #aaa;
 }
+
+.footer {
+    background-color: #111;
+    color: #aaa;
+    padding: 25px 0;
+    text-align: center;
+}
+
+.footer-simple {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer-links a,
+.footer-social a {
+    margin: 0 10px;
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+    color: #0070f3;
+}
